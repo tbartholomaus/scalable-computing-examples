@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "adcmodel"
+version = "0.1.0"
+description = ""
+authors = ["Timothy Bartholomaus <24902730+tbartholomaus@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

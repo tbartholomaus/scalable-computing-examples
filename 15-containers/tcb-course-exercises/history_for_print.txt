@@ -1,0 +1,318 @@
+    1  ls
+    2  cd R
+    3  ls
+    4  cd ..
+    5  ls
+    6  ls hewitt
+    7  ls hewitt/mypaper/
+    8  ls hewitt/mypaper/NAMESPACE 
+    9  ls hewitt/training-hewitt/
+   10  ls -lt hewitt/training-hewitt/
+   11  ls -lt hewitt/training-hewitt/data
+   12  cd bartholomaus/
+   13  ls
+   14  mkdir timtest
+   15  ls
+   16  cd timtest/
+   17  ls
+   18  cd ..
+   19  ls
+   20  clea
+   21  clear
+   22  mkdir practice
+   23  ls
+   24  rmdir practice
+   25  mkdir bash_practice
+   26  cd bash_practice/
+   27  ls
+   28  touch file1.txt
+   29  touch file2.txt
+   30  touch file3.txt
+   31  touch mypython.py mycsv.csv
+   32  ls
+   33  ls -l *.txt | wc -l
+   34  ls *.txt | wc -l
+   35  rm mypython.py 
+   36  mkdir data
+   37  mv mycsv.csv data/
+   38  ls *.txt
+   39  ls *.txt | wc -l
+   40  ls *.txt | wc
+   41  ls -1 *.txt | wc
+   42  cd data/
+   43  ls
+   44  mv mycsv.csv mydata.csv
+   45  ls
+   46  echo "col1, col2, col3" > mydata.csv
+   47  cat mydata.csv 
+   48  ls
+   49  python3 --version
+   50  cd ..
+   51  ls
+   52  git clone https://github.com/tbartholomaus/scalable-computing-examples.git
+   53  ls
+   54  tree
+   55  ls
+   56  cd ..
+   57  ls
+   58  git clone https://github.com/tbartholomaus/scalable-computing-examples.git
+   59  cd bash_practice/
+   60  ls
+   61  rm -r scalable-computing-examples/
+   62  ls
+   63  cd ..
+   64  ls
+   65  cd ..
+   66  ls
+   67  mkvirtualenv --version
+   68  mkvirtualenv -p python3.10 scomp
+   69  cd ..
+   70  workon
+   71  cd scalable-computing-examples/
+   72  ls
+   73  pip install -r requirements.txt
+   74  deactivate
+   75  workon scomp
+   76  ipython
+   77  pip install --use-deprecated=legacy-resolver -r requirements.txt
+   78  deactivate
+   79  workon scomp
+   80  python -v
+   81  python -V
+   82  workon scomp
+   83  ls
+   84  /bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+   85  ls
+   86  git pull
+   87  ls
+   88  git status
+   89  git add Mon_postlunch.ipynb 
+   90  git add myplot.py 
+   91  ls
+   92  git commit -m "First post-lunch monday"
+   93  ls
+   94  cd /homes/shares
+   95  cd /home/shares
+   96  cd example-pdg-data/
+   97  ls
+   98  time for fn in $(ls WV03*.gpkg); do echo $fn; done
+   99  time for fn in $(ls WV03*.gpkg); do echo $fn; shasum -a 256 ${fn}; done
+  100  ls WV03*.gpkg | parallel "shasum -a 256 {}"
+  101  time ls WV03*.gpkg | parallel "shasum -a 256 {}"
+  102  time for fn in $(ls WV03*.gpkg); do echo $fn; shasum -a 256 ${fn}; done
+  103  cd ~
+  104  ls
+  105  cd scalable-computing-examples/
+  106  ls
+  107  cd 04-pleasing/
+  108  ls
+  109  ls -lt
+  110  /bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  111  /bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  112  pip install "dask[complete]"
+  113  /bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  114  git status
+  115  git pull
+  116  pip install pydantic=="1.10.9"
+  117  git status
+  118  git commit -a -m "Commit from Mar 26, after lunch"
+  119  git config --global user.name "Timothy Bartholomaus"
+  120  git commit -a -m "Commit from Mar 26, after lunch"
+  121  git push
+  122  ls /tmp/
+  123  ls /tmp/log.log
+  124  ls -lt /tmp/log.log
+  125  vi /tmp/log.log
+  126  git commit --amend --reset-author --no-edit
+  127  git status
+  128  git add 06-dask
+  129  git add 05-xarray_netCDF
+  130  git status
+  131  git push
+  132  git status
+  133  git commit
+  134  git status
+  135  git commit -h
+  136  git commit -a -m "third change"
+  137  git push
+  138  cd 06-dask/
+  139  ls
+  140  ls -lt
+  141  ls -lth
+  142  git -h
+  143  git --help
+  144  git rm --cached *csv
+  145  git rm --cached *tif
+  146  ls
+  147  git status
+  148  git rm --cached *tif
+  149  ls
+  150  git status
+  151  git commit -a -m "remove large dg_soil_moisture.csv"
+  152  git push
+  153  cd ..
+  154  git pull
+  155  git status
+  156  rm 06-dask/dg_soil_moisture.csv 
+  157  git commit -a -m "delete dg_soil_moisture.csv"
+  158  git push
+  159  ls
+  160  ls .git
+  161  ls .git/hooks/
+  162  git push
+  163  git log
+  164  git reset --hard HEAD~4
+  165  git reflog
+  166  git reset --hard 5beb11a
+  167  git reflog
+  168  git status
+  169  cd ..
+  170  mkdir tim_copy
+  171  cp scalable-computing-examples/* tim_copy/
+  172  cp -r scalable-computing-examples/* tim_copy/
+  173  cd tim_copy/
+  174  ls
+  175  ls -alt
+  176  ls 05-xarray_netCDF/
+  177  cd ../scalable-computing-examples/
+  178  ls
+  179  git log
+  180  git reset HEAD~2
+  181  git log
+  182  git reset HEAD~2
+  183  ls
+  184  git status
+  185  cd 05-xarray_netCDF/
+  186  ls
+  187  git status
+  188  git add .
+  189  git status
+  190  git restore --staged *nc
+  191  git status
+  192  cd ../04-pleasing/
+  193  ls
+  194  ls -alt
+  195  ls -alth
+  196  rm *.tif
+  197  ls -alth
+  198  cd ..
+  199  ls
+  200  vi .gitignore
+  201  git status
+  202  git log
+  203  git commit -a -m "Many changes since yesterday"
+  204  git push
+  205  git push -f
+  206  ls
+  207  git pull
+  208  git status
+  209  git commit -a -m "include 06-dask, 04-pleasing, others"
+  210  git add 06-dask/
+  211  git add Mon_postlunch.ipynb 
+  212  git add myplot.py 
+  213  git add 04-pleasing/pleasing_TCB.ipynb 
+  214  git add 04-pleasing/runinfo/
+  215  git commit -a -m "include 06-dask, 04-pleasing, others"
+  216  git status
+  217  git push
+  218  git pull
+  219  git pull --no-rebase
+  220  git pull
+  221  git push
+  222  git pull
+  223  git push
+  224  git pull
+  225  pip uninstall pdgraster
+  226  pip uninstall pdgstaging
+  227  pip install --use-deprecated=legacy-resolver -r requirements.txt
+  228  /usr/bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  229  git status
+  230  git commit -a -m "end of day from Tues Mar26th"
+  231  git push
+  232  git pull
+  233  ls
+  234  cd 09-Geopandas/
+  235  ls
+  236  ls -alt
+  237  ls -alth
+  238  cd ..
+  239  git status
+  240  git add 09-Geopandas/
+  241  ls
+  242  git status
+  243  git commit -a -m "First commit with 09-geopandas"
+  244  git push
+  245  git status
+  246  git commit -a -m "End of geopandas"
+  247  git push
+  248  git status
+  249  /usr/bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  250  workon adcmodel
+  251  pwd
+  252  poetry new adcmodel
+  253  cd adcmodel
+  254  ls
+  255  tree
+  256  poetry add pandas
+  257  ls
+  258  /usr/bin/python3 /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/bartholomaus/.vscode-server/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+  259  tree
+  260  workon adcmodel
+  261  poetry install
+  262  tree
+  263  ls
+  264  mv data.py adcmodel/
+  265  ls
+  266  poetry add --group dev pytest black
+  267  ls
+  268  tree
+  269  vi ../scalable-computing-examples/
+  270  vi ../scalable-computing-examples/.gitignore 
+  271  tree
+  272  pytest
+  273  cd ..
+  274  ls
+  275  ls adcmodel/
+  276  ls
+  277  git status
+  278  git pull
+  279  git push
+  280  cd ~
+  281  mkvirtualenv -p python3.10 adcmodel
+  282  deactivate
+  283  workon adcmodel
+  284  python -m pop install poetry
+  285  python -m pip install poetry
+  286  deactivate
+  287  workon adcmodel
+  288  ls
+  289  cd ..
+  290  ls
+  291  mkdir ~/adc-course
+  292  mkdir ~/adc-course/output
+  293  mkdir ~/adc-course/scripts
+  294  cp scalable-computing-examples/
+  295  ls
+  296  ls scalable-computing-examples/15-containers/
+  297  cp scalable-computing-examples/15-containers/discharge-data.csv adc-course/input
+  298  cp scalable-computing-examples/15-containers/max-discharge.py ~/adc-course/scripts/
+  299  docker image ls
+  300  docker run -it --rm -h adccourse -v ~/adc-course:/var/data adccourse:1.0
+  301  ls -ld ~/adc-course/
+  302  chmod -R go+rwX ~/adc-course
+  303  ls -ld ~/adc-course/
+  304  cp scalable-computing-examples/15-containers/discharge-data.csv adc-course/input/
+  305  rm -r adc-course/input
+  306  mkdir ~/adc-course/input
+  307  cp scalable-computing-examples/15-containers/discharge-data.csv adc-course/input/
+  308  docker run -it --rm -h adccourse -v ~/adc-course:/var/data adccourse:1.0
+  309  docker run -it --rm -h adccourse -v ~/adc-course:/var/data adccourse:1.0 bash -i -c "workon scomp && python /var/data/scripts/max-discharge.py"
+  310  tree adc-course/
+  311  open adc-course/output/max-discharge.png 
+  312  tree
+  313  ~
+  314  tail .bash_history 
+  315  head .bash_history 
+  316  history -a
+  317  tail .bash_history 
+  318  history > history_for_print.txt
