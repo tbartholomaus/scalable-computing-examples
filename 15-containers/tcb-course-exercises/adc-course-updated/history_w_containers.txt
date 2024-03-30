@@ -1,0 +1,16 @@
+ 1026  docker ps
+ 1027  docker run -it --rm adccourse:1.0
+ 1028  ls ~/adc-course
+ 1029  ls
+ 1030  cd ..
+ 1031  ls
+ 1032  cd ~
+ 1033  ls
+ 1034  ls RESln/Cloud_computing_course/scalable-computing-examples
+ 1035  ls RESln/Cloud_computing_course/scalable-computing-examples/15-containers
+ 1036  ls RESln/Cloud_computing_course/scalable-computing-examples/15-containers/tcb-course-exercises
+ 1037  history
+ 1038  history -h
+ 1039  history --help
+ 1040  man history
+ 1041  history -a

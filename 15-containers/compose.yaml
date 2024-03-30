@@ -1,3 +1,18 @@
 services:
+  web:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ~/adc-course/web:/usr/share/nginx/html
+    depends_on:
+      - program_execute
+
+  program_execute:
+    image: adccourse:1.0
+    volumes:
+      - ~/adc-course:/var/data
+    command: [ "bash", "-i", "-c", "workon scomp-env && python /var/data/scripts/max-discharge.py" ]
+
   hello_world:
     image: hello-world

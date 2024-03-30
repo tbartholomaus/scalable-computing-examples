@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx
+    ports:
+      - 8000:80
+    volumes:
+      - ~/adc-course/web:/usr/share/nginx/html
+
+  hello_world:
+    image: hello-world
